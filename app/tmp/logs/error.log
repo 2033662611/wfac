@@ -1,0 +1,16 @@
+2013-08-23 07:48:56 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'username'
+Request URL: /wfac/users/add
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/wfac/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `wf...', Array)
+#2 /var/www/wfac/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `wf...')
+#3 /var/www/wfac/lib/Cake/Model/Model.php(1745): DboSource->create(Object(User), Array, Array)
+#4 /var/www/wfac/lib/Cake/Controller/Scaffold.php(245): Model->save(Array)
+#5 /var/www/wfac/lib/Cake/Controller/Scaffold.php(394): Scaffold->_scaffoldSave(Object(CakeRequest), 'add')
+#6 /var/www/wfac/lib/Cake/Controller/Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#7 /var/www/wfac/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#8 /var/www/wfac/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#9 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
