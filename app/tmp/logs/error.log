@@ -78,3 +78,33 @@ Stack Trace:
 #3 /var/www/wfac/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-08-24 16:20:47 Error: [MissingTableException] Table my_users for model MyUser was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'my_users',
+  'class' => 'MyUser',
+  'ds' => 'default',
+)
+Request URL: /wfac/my_users
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Model/Model.php(3247): Model->setSource('my_users')
+#1 /var/www/wfac/lib/Cake/Model/Model.php(1318): Model->getDataSource()
+#2 /var/www/wfac/lib/Cake/Model/Model.php(1401): Model->schema()
+#3 /var/www/wfac/lib/Cake/Model/Model.php(1389): Model->hasField('title', false)
+#4 /var/www/wfac/lib/Cake/Model/Model.php(878): Model->hasField(Array)
+#5 /var/www/wfac/lib/Cake/Controller/Scaffold.php(133): Model->__get('displayField')
+#6 /var/www/wfac/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(MyUsersController), Object(CakeRequest))
+#7 /var/www/wfac/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#8 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(MyUsersController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-08-24 16:47:01 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting T_FUNCTION in [/var/www/wfac/app/Controller/PostsController.php, line 4]
+2013-08-24 16:47:01 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting T_FUNCTION
+Request URL: /wfac/posts
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/wfac/a...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/wfac/a...', 4, Array)
+#2 /var/www/wfac/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/wfac/a...', 4, Array)
+#3 /var/www/wfac/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
