@@ -128,3 +128,209 @@ Stack Trace:
 #9 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
 #10 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2013-08-24 23:25:10 Error: [MissingActionException] Action Users::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'login',
+)
+Request URL: /wfac/users/login
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Controller/Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/wfac/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 /var/www/wfac/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-08-24 23:25:33 Error: [MissingActionException] Action Users::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'login',
+)
+Request URL: /wfac/users/login
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Controller/Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/wfac/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 /var/www/wfac/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-08-24 23:28:33 Error: [MissingActionException] Action Users::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'login',
+)
+Request URL: /wfac/users/login
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Controller/Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/wfac/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 /var/www/wfac/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-08-24 23:28:37 Error: [MissingActionException] Action Users::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'login',
+)
+Request URL: /wfac/users/login
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Controller/Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/wfac/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 /var/www/wfac/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-08-24 23:31:11 Error: [MissingActionException] Action Users::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'login',
+)
+Request URL: /wfac/users/login
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Controller/Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/wfac/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 /var/www/wfac/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-08-24 23:32:14 Error: [MissingActionException] Action Users::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'login',
+)
+Request URL: /wfac/users/login
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Controller/Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/wfac/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 /var/www/wfac/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-08-24 23:32:41 Error: [MissingActionException] Action Users::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'login',
+)
+Request URL: /wfac/users/login
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Controller/Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/wfac/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 /var/www/wfac/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-08-24 23:34:27 Error: [MissingActionException] Action Users::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'login',
+)
+Request URL: /wfac/users/login
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Controller/Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/wfac/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 /var/www/wfac/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-08-24 23:37:06 Error: [MissingActionException] Action Users::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'login',
+)
+Request URL: /wfac/users/login
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Controller/Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/wfac/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 /var/www/wfac/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-08-24 23:37:28 Error: [MissingActionException] Action Users::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'login',
+)
+Request URL: /wfac/users/login
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Controller/Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/wfac/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 /var/www/wfac/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-08-24 23:37:37 Error: [MissingActionException] Action Users::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'login',
+)
+Request URL: /wfac/users/login
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Controller/Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/wfac/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 /var/www/wfac/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-08-24 23:37:47 Error: [MissingActionException] Action Users::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'login',
+)
+Request URL: /wfac/users/login
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Controller/Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/wfac/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 /var/www/wfac/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-08-24 23:56:29 Error: [MissingActionException] Action Users::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'Users',
+  'action' => 'login',
+)
+Request URL: /wfac/users/login
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Controller/Scaffold.php(153): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/wfac/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(UsersController), Object(CakeRequest))
+#2 /var/www/wfac/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2013-08-24 23:58:15 Error: [MissingViewException] View file "/var/www/wfac/app/View/Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/wfac/app/View/Users/login.ctp',
+)
+Request URL: /wfac/users/login
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/wfac/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-08-25 00:00:04 Error: [MissingViewException] View file "/var/www/wfac/app/View/Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/wfac/app/View/Users/login.ctp',
+)
+Request URL: /wfac/users/login
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/wfac/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

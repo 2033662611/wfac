@@ -20,7 +20,7 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-App::uses('Controller', 'Controller');
+App::uses ( 'Controller', 'Controller' );
 
 /**
  * Application Controller
@@ -28,8 +28,35 @@ App::uses('Controller', 'Controller');
  * Add your application-wide methods in the class below, your controllers
  * will inherit them.
  *
- * @package		app.Controller
- * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
+ * @package app.Controller
+ * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+	public $components = array (
+			'Session',
+			'Auth' => array (
+					'loginRedirect' => array (
+							'controller' => 'pages',
+							'action' => 'display',
+							'home' 
+					),
+					'logoutRedirect' => array (
+							'controller' => 'users',
+							'action' => 'login' 
+					),
+					'authorize' => array (
+							'Controller' 
+					) 
+			) 
+	);
+	public function isAuthorized($user) {
+		if (isset ( $user ['group_id'] ) && $user ['group_id'] === '1') {
+			return true;
+		}
+		
+		return false;
+	}
+	public function beforeFilter() {
+		$this->Auth->allow ( 'logout' );
+	}
 }
