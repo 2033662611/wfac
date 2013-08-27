@@ -334,3 +334,20 @@ Stack Trace:
 #3 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #4 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2013-08-27 19:32:37 Error: [MissingTableException] Table option_groups for model OptionGroup was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'option_groups',
+  'class' => 'OptionGroup',
+  'ds' => 'default',
+)
+Request URL: /wfac/option_groups
+Stack Trace:
+#0 /var/www/wfac/lib/Cake/Model/Model.php(3247): Model->setSource('option_groups')
+#1 /var/www/wfac/lib/Cake/Model/Model.php(1318): Model->getDataSource()
+#2 /var/www/wfac/lib/Cake/Controller/Scaffold.php(138): Model->schema()
+#3 /var/www/wfac/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(OptionGroupsController), Object(CakeRequest))
+#4 /var/www/wfac/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#5 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/wfac/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(OptionGroupsController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/wfac/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}

@@ -14,7 +14,10 @@ class PurchaseItem extends AppModel {
 			'unit' => 'notempty' 
 	);
 	public $belongsTo = array (
-			'PurchaseOrder' 
+			'PurchaseOrder',
+			'OgShelf' => array (
+					'className' => 'Option' 
+			) 
 	);
 }
 			
