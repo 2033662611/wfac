@@ -16,7 +16,12 @@ class PurchaseItem extends AppModel {
 	public $belongsTo = array (
 			'PurchaseOrder',
 			'OgShelf' => array (
-					'className' => 'Option' 
+					'className' => 'Option',
+					'foreignKey' => false,
+					'conditions' => array (
+							"PurchaseItem.og_shelf_id = OgShelf.option_value",
+							"OgShelf.option_group_id = (SELECT id FROM option_groups WHERE name='og_shelves')" 
+					) 
 			) 
 	);
 }

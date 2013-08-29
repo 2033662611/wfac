@@ -33,7 +33,7 @@ foreach ( ${$pluralVar} as ${$singularVar} ) :
 		$isKey = false;
 		if (! empty ( $associations ['belongsTo'] )) {
 			foreach ( $associations ['belongsTo'] as $_alias => $_details ) {
-				if ($_field === $_details ['foreignKey']) {
+				if ($_field === $_details ['foreignKey'] || $_alias === Inflector::classify ( preg_replace ( '/(?:_id)$/', '', $_field ) )) {
 					$isKey = true;
 					echo '<td>' . $this->Html->link ( ${$singularVar} [$_alias] [$_details ['displayField']], array (
 							'controller' => $_details ['controller'],

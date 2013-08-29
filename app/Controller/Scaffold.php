@@ -268,10 +268,12 @@ class Scaffold {
 				$fields = null;
 				
 				if ($assocData ['className'] == 'Option') {
-					$ogName = Inflector::pluralize ( preg_replace ( '/(?:_id)$/', '', $assocData ['foreignKey'] ) );
+					$ogName = Inflector::tableize ( $assocName );
 					$ogId = $this->ScaffoldModel->{$assocName}->OptionGroup->field ( 'id', array (
 							'name' => $ogName 
 					) );
+					
+					$varName = Inflector::variable ( $ogName );
 					
 					$conditions = array (
 							"$assocName.option_group_id" => $ogId 
