@@ -15,18 +15,25 @@ class Option extends AppModel {
 			) 
 	);
 	public function beforeFind($queryData) {
-		$option = $this->find ( 'first', array (
-				'fields' => 'option_value',
-				'conditions' => array (
-						'Option.id' => $this->id 
-				),
-				'recursive' => - 1,
-				'callbacks' => false 
-		) );
-		
-		$this->hasMany ['PurchaseItem'] ['conditions'] = array (
-				'PurchaseItem.og_shelf_id' => $option ['Option'] ['option_value'] 
-		);
+		if (! empty ( $this->id )) {
+			$option = $this->find ( 'first', array (
+					'conditions' => array (
+							'Option.id' => $this->id 
+					),
+					'recursive' => 0,
+					'callbacks' => false 
+			) );
+			
+			if ($option ['OptionGroup'] ['name'] != 'og_shelves') {
+				$this->hasMany ['PurchaseItem'] ['conditions'] = array (
+						'1!=1' 
+				);
+			} else {
+				$this->hasMany ['PurchaseItem'] ['conditions'] = array (
+						'PurchaseItem.og_shelf_id' => $option ['Option'] ['option_value'] 
+				);
+			}
+		}
 		
 		return $queryData;
 	}
