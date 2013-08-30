@@ -18,6 +18,33 @@ USE `wfac`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `consume_items`
+--
+
+DROP TABLE IF EXISTS `consume_items`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `consume_items` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `quantity` int(10) unsigned NOT NULL,
+  `purchase_item_id` int(10) unsigned NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `consume_items`
+--
+
+LOCK TABLES `consume_items` WRITE;
+/*!40000 ALTER TABLE `consume_items` DISABLE KEYS */;
+INSERT INTO `consume_items` VALUES (1,11,3,'2013-08-30 11:51:29','2013-08-30 11:57:59'),(2,41,1,'2013-08-30 11:55:44','2013-08-30 11:58:09'),(4,8,1,'2013-08-30 11:56:38','2013-08-30 11:56:38');
+/*!40000 ALTER TABLE `consume_items` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `controller_files`
 --
 
@@ -31,7 +58,7 @@ CREATE TABLE `controller_files` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +67,7 @@ CREATE TABLE `controller_files` (
 
 LOCK TABLES `controller_files` WRITE;
 /*!40000 ALTER TABLE `controller_files` DISABLE KEYS */;
-INSERT INTO `controller_files` VALUES (1,'controller_files','ControllerFilesController.php','2013-08-24 23:05:29','2013-08-24 23:05:29'),(2,'groups','GroupsController.php','2013-08-24 23:06:10','2013-08-24 23:06:10'),(3,'model_files','ModelFilesController.php','2013-08-24 23:06:29','2013-08-24 23:06:29'),(4,'users','UsersController.php','2013-08-24 23:06:47','2013-08-24 23:06:47'),(5,'purchase_orders','PurchaseOrdersController.php','2013-08-27 10:14:13','2013-08-27 10:14:13'),(6,'purchase_items','PurchaseItemsController.php','2013-08-27 10:14:25','2013-08-27 10:14:25'),(7,'option_groups','OptionGroupsController.php','2013-08-27 16:34:00','2013-08-27 16:34:00'),(8,'options','OptionsController.php','2013-08-27 16:34:06','2013-08-27 16:34:06');
+INSERT INTO `controller_files` VALUES (1,'controller_files','ControllerFilesController.php','2013-08-24 23:05:29','2013-08-24 23:05:29'),(2,'groups','GroupsController.php','2013-08-24 23:06:10','2013-08-24 23:06:10'),(3,'model_files','ModelFilesController.php','2013-08-24 23:06:29','2013-08-24 23:06:29'),(4,'users','UsersController.php','2013-08-24 23:06:47','2013-08-24 23:06:47'),(5,'purchase_orders','PurchaseOrdersController.php','2013-08-27 10:14:13','2013-08-27 10:14:13'),(6,'purchase_items','PurchaseItemsController.php','2013-08-27 10:14:25','2013-08-27 10:14:25'),(7,'option_groups','OptionGroupsController.php','2013-08-27 16:34:00','2013-08-27 16:34:00'),(8,'options','OptionsController.php','2013-08-27 16:34:06','2013-08-27 16:34:06'),(9,'consume_items','ConsumeItemsController.php','2013-08-30 11:33:43','2013-08-30 11:33:43');
 /*!40000 ALTER TABLE `controller_files` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -88,7 +115,7 @@ CREATE TABLE `model_files` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -251,4 +278,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-08-30 10:37:44
+-- Dump completed on 2013-08-30 12:09:06

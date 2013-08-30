@@ -24,5 +24,8 @@ class PurchaseItem extends AppModel {
 					) 
 			) 
 	);
+	public $hasMany = array (
+			'ConsumeItem' 
+	);
 }
 			
