@@ -1,10 +1,10 @@
 CREATE DATABASE  IF NOT EXISTS `wfac` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `wfac`;
--- MySQL dump 10.13  Distrib 5.5.32, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.22, for debian-linux-gnu (x86_64)
 --
 -- Host: 127.0.0.1    Database: wfac
 -- ------------------------------------------------------
--- Server version	5.5.32-0ubuntu0.12.04.1
+-- Server version	5.5.22-0ubuntu1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -88,7 +88,7 @@ CREATE TABLE `model_files` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -152,7 +152,7 @@ CREATE TABLE `options` (
 
 LOCK TABLES `options` WRITE;
 /*!40000 ALTER TABLE `options` DISABLE KEYS */;
-INSERT INTO `options` VALUES (1,32,'fdsfds',3,'2013-08-27 17:01:51','2013-08-27 22:54:48'),(2,1,'A1111111',7,'2013-08-27 17:08:52','2013-08-27 17:08:59'),(3,2,'a2222222222222',6,'2013-08-27 17:09:10','2013-08-27 22:27:06'),(4,3,'B11111111',7,'2013-08-27 17:09:35','2013-08-27 17:09:58'),(5,4,'C111111111',7,'2013-08-27 17:09:46','2013-08-27 17:10:01');
+INSERT INTO `options` VALUES (1,3,'fdsfds',3,'2013-08-27 17:01:51','2013-08-28 13:08:46'),(2,1,'A1111111',7,'2013-08-27 17:08:52','2013-08-27 17:08:59'),(3,2,'a2222222222222',6,'2013-08-27 17:09:10','2013-08-27 22:27:06'),(4,3,'B11111111',7,'2013-08-27 17:09:35','2013-08-27 17:09:58'),(5,3,'fddsfdfgdC111111111',9,'2013-08-27 17:09:46','2013-08-28 13:09:14');
 /*!40000 ALTER TABLE `options` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -174,7 +174,7 @@ CREATE TABLE `purchase_items` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -183,7 +183,7 @@ CREATE TABLE `purchase_items` (
 
 LOCK TABLES `purchase_items` WRITE;
 /*!40000 ALTER TABLE `purchase_items` DISABLE KEYS */;
-INSERT INTO `purchase_items` VALUES (1,'铁',100.50,100,'吨',1,1,'2013-08-27 11:18:42','2013-08-27 11:40:30'),(2,'铝',200.50,100,'吨',1,1,'2013-08-27 11:19:03','2013-08-27 23:09:43');
+INSERT INTO `purchase_items` VALUES (1,'铁',100.50,100,'吨',1,3,'2013-08-27 11:18:42','2013-08-28 09:27:07'),(2,'铝',200.50,100,'吨',1,3,'2013-08-27 11:19:03','2013-08-28 16:44:34'),(3,'fds',33.22,54,'dsadsa',1,1,'2013-08-28 14:19:02','2013-08-29 09:26:28');
 /*!40000 ALTER TABLE `purchase_items` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -200,7 +200,7 @@ CREATE TABLE `purchase_orders` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -251,4 +251,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-08-28  0:11:00
+-- Dump completed on 2013-08-30  9:09:04
