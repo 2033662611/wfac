@@ -39,9 +39,53 @@ $cakeDescription = __d ( 'cake_dev', 'CakePHP: the rapid development php framewo
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+			
 		</div>
 		<div id="content">
+		
+			<div id="i-actions-holder">
+				<div class="i-actions">
+					<span>采购中心</span>
+					<a href="/wfac/purchase_orders">订单列表</a>
+					<a href="/wfac/purchase_orders/add">添加订单</a>
+					<a href="/wfac/purchase_items">条目列表</a>
+					<a href="/wfac/purchase_items/add">添加条目</a>
+				</div>
+	
+				<div class="i-actions">
+					<span>生产中心</span>
+					<a href="/wfac/sales_orders">订单列表</a>
+					<a href="/wfac/sales_orders/add">添加订单</a>
+					<a href="/wfac/sales_items">条目列表</a>
+					<a href="/wfac/sales_items/add">添加条目</a>
+					<a href="/wfac/sales_parts">零件列表</a>
+					<a href="/wfac/sales_parts/add">添加零件</a>
+					<a href="/wfac/processes">工序列表</a>
+					<a href="/wfac/processes/add">添加工序</a> 
+				</div>
+	
+				<div class="i-actions">
+					<span>领料中心</span> 
+					<a href="/wfac/consume_items">条目列表</a>
+					<a href="/wfac/consume_items/add">添加条目</a> 
+				</div>
+	
+				<div class="i-actions">
+					<span>开发中心</span> 
+					<a href="/wfac/groups">分组列表</a>
+					<a href="/wfac/groups/add">添加分组</a> 
+					<a href="/wfac/users">用户列表</a>
+					<a href="/wfac/users/add">添加用户</a> 
+					<a href="/wfac/option_groups">选项组列表</a>
+					<a href="/wfac/option_groups/add">添加选项组</a> 
+					<a href="/wfac/options">选项列表</a>
+					<a href="/wfac/options/add">添加选项</a> 
+					<a href="/wfac/controller_files">控制层文件列表</a>
+					<a href="/wfac/controller_files/add">添加控制层文件</a> 
+					<a href="/wfac/model_files">模型层文件列表</a>
+					<a href="/wfac/model_files/add">添加模型层文件</a> 
+				</div>
+			</div>
 
 			<?php echo $this->Session->flash(); ?>
 

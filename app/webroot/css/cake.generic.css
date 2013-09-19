@@ -737,3 +737,113 @@ pre {
 #url-rewriting-warning {
 	display:none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+#header{
+	height:70px;
+	border-bottom:1px solid #ccc;
+	background:#eee;
+}
+
+#content{ 
+	background:#f7f7f7;
+}
+
+div.form{
+	border:1px solid #ccc;
+	background:#fff;
+	width:860px;
+}
+
+div.form legend{
+	color:#79e;
+	border-bottom:3px solid #999;	
+}
+
+div.input{
+	margin-bottom:0;
+}
+
+div.input label{
+	width:140px;
+	padding-top:16px;
+	padding-right:10px;
+	float:left;
+	text-align:right; 
+}
+
+div.input input{
+	width:auto;
+}
+
+div.input select{
+	padding:5px 0;
+}
+
+div.submit{
+	padding-left:170px;
+}
+
+div.submit input{
+	border:none;
+	background:#79e !important;
+}
+
+div.actions{
+	display:none;
+}
+
+div#i-actions-holder{ 
+	width:230px;
+	float:left;
+}
+
+div.i-actions{ 
+	border-top:6px solid #ccc;
+	background:#fff; 
+	width:230px;
+	float:left;
+	margin-bottom:10px;
+}
+
+div.i-actions span{
+	font-size:20px;
+	padding:15px;	
+	display:block;	
+	color:#79e;	
+}
+
+div.i-actions a{
+	height:18px;
+	line-height:18px;
+	display:block;	
+	border-top:1px solid #ccc;
+	padding:15px;	
+	text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
