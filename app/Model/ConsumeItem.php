@@ -6,7 +6,8 @@ class ConsumeItem extends AppModel {
 			'quantity' => 'naturalNumber' 
 	);
 	public $belongsTo = array (
-			'PurchaseItem' 
+			'PurchaseItem',
+			'SalesOrder' 
 	);
 }
 			

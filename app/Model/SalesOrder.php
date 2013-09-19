@@ -7,13 +7,18 @@ class SalesOrder extends AppModel {
 					'className' => 'User',
 					'foreignKey' => 'salesman_id' 
 			),
+			'Picker' => array (
+					'className' => 'User',
+					'foreignKey' => 'picker_id' 
+			),
 			'Inputer' => array (
 					'className' => 'User',
 					'foreignKey' => 'inputer_id' 
 			) 
 	);
 	public $hasMany = array (
-			'SalesItem' 
+			'SalesItem',
+			'ConsumeItem' 
 	);
 }
 			

@@ -28,6 +28,7 @@ CREATE TABLE `consume_items` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `quantity` int(10) unsigned NOT NULL,
   `purchase_item_id` int(10) unsigned NOT NULL,
+  `sales_order_id` int(10) unsigned NOT NULL,
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -40,7 +41,7 @@ CREATE TABLE `consume_items` (
 
 LOCK TABLES `consume_items` WRITE;
 /*!40000 ALTER TABLE `consume_items` DISABLE KEYS */;
-INSERT INTO `consume_items` VALUES (1,11,3,'2013-08-30 11:51:29','2013-08-30 11:57:59'),(2,41,1,'2013-08-30 11:55:44','2013-08-30 11:58:09'),(4,8,1,'2013-08-30 11:56:38','2013-08-30 11:56:38');
+INSERT INTO `consume_items` VALUES (1,11,3,2,'2013-08-30 11:51:29','2013-09-19 16:49:43'),(2,41,1,0,'2013-08-30 11:55:44','2013-08-30 11:58:09'),(4,8,1,0,'2013-08-30 11:56:38','2013-08-30 11:56:38');
 /*!40000 ALTER TABLE `consume_items` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -310,6 +311,7 @@ CREATE TABLE `sales_orders` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `po` varchar(255) NOT NULL,
   `salesman_id` int(10) unsigned NOT NULL,
+  `picker_id` int(10) unsigned NOT NULL,
   `inputer_id` int(10) unsigned NOT NULL,
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
@@ -323,7 +325,7 @@ CREATE TABLE `sales_orders` (
 
 LOCK TABLES `sales_orders` WRITE;
 /*!40000 ALTER TABLE `sales_orders` DISABLE KEYS */;
-INSERT INTO `sales_orders` VALUES (1,'VE3637382',2,1,'2013-09-19 14:52:34','2013-09-19 14:52:34'),(2,'VG3637382',1,2,'2013-09-19 14:52:51','2013-09-19 14:52:51');
+INSERT INTO `sales_orders` VALUES (1,'VE3637382',2,2,1,'2013-09-19 14:52:34','2013-09-19 16:46:01'),(2,'VG3637382',1,1,2,'2013-09-19 14:52:51','2013-09-19 16:46:08');
 /*!40000 ALTER TABLE `sales_orders` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -393,4 +395,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-09-19 16:05:03
+-- Dump completed on 2013-09-19 16:50:39
