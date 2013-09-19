@@ -192,14 +192,14 @@ DROP TABLE IF EXISTS `processes`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `processes` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `process_name_id` int(10) unsigned NOT NULL,
+  `og_process_name_id` int(10) unsigned NOT NULL,
   `operator_id` int(10) unsigned NOT NULL,
   `sales_part_id` int(10) unsigned NOT NULL,
-  `status_id` int(10) unsigned NOT NULL,
+  `og_status_id` int(10) unsigned NOT NULL,
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -208,6 +208,7 @@ CREATE TABLE `processes` (
 
 LOCK TABLES `processes` WRITE;
 /*!40000 ALTER TABLE `processes` DISABLE KEYS */;
+INSERT INTO `processes` VALUES (1,1,2,1,1,'2013-09-19 15:41:19','2013-09-19 15:41:19'),(2,2,1,1,1,'2013-09-19 15:41:30','2013-09-19 15:41:30');
 /*!40000 ALTER TABLE `processes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -285,7 +286,7 @@ CREATE TABLE `sales_items` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -294,6 +295,7 @@ CREATE TABLE `sales_items` (
 
 LOCK TABLES `sales_items` WRITE;
 /*!40000 ALTER TABLE `sales_items` DISABLE KEYS */;
+INSERT INTO `sales_items` VALUES (1,'产品A',10.00,20,'TON',2,'2013-09-19 14:57:46','2013-09-19 14:57:46'),(2,'产品B',20.00,15,'TON',2,'2013-09-19 14:58:09','2013-09-19 14:58:09');
 /*!40000 ALTER TABLE `sales_items` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -312,7 +314,7 @@ CREATE TABLE `sales_orders` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -321,6 +323,7 @@ CREATE TABLE `sales_orders` (
 
 LOCK TABLES `sales_orders` WRITE;
 /*!40000 ALTER TABLE `sales_orders` DISABLE KEYS */;
+INSERT INTO `sales_orders` VALUES (1,'VE3637382',2,1,'2013-09-19 14:52:34','2013-09-19 14:52:34'),(2,'VG3637382',1,2,'2013-09-19 14:52:51','2013-09-19 14:52:51');
 /*!40000 ALTER TABLE `sales_orders` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -339,7 +342,7 @@ CREATE TABLE `sales_parts` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -348,6 +351,7 @@ CREATE TABLE `sales_parts` (
 
 LOCK TABLES `sales_parts` WRITE;
 /*!40000 ALTER TABLE `sales_parts` DISABLE KEYS */;
+INSERT INTO `sales_parts` VALUES (1,'A1',100,1,'2013-09-19 15:19:05','2013-09-19 15:19:05'),(2,'A2',200,1,'2013-09-19 15:19:17','2013-09-19 15:19:17');
 /*!40000 ALTER TABLE `sales_parts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -389,4 +393,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-09-19 14:25:59
+-- Dump completed on 2013-09-19 16:05:03
