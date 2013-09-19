@@ -1,10 +1,10 @@
 CREATE DATABASE  IF NOT EXISTS `wfac` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `wfac`;
--- MySQL dump 10.13  Distrib 5.5.22, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.32, for debian-linux-gnu (x86_64)
 --
 -- Host: 127.0.0.1    Database: wfac
 -- ------------------------------------------------------
--- Server version	5.5.22-0ubuntu1
+-- Server version	5.5.32-0ubuntu0.12.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -58,7 +58,7 @@ CREATE TABLE `controller_files` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -67,7 +67,7 @@ CREATE TABLE `controller_files` (
 
 LOCK TABLES `controller_files` WRITE;
 /*!40000 ALTER TABLE `controller_files` DISABLE KEYS */;
-INSERT INTO `controller_files` VALUES (1,'controller_files','ControllerFilesController.php','2013-08-24 23:05:29','2013-08-24 23:05:29'),(2,'groups','GroupsController.php','2013-08-24 23:06:10','2013-08-24 23:06:10'),(3,'model_files','ModelFilesController.php','2013-08-24 23:06:29','2013-08-24 23:06:29'),(4,'users','UsersController.php','2013-08-24 23:06:47','2013-08-24 23:06:47'),(5,'purchase_orders','PurchaseOrdersController.php','2013-08-27 10:14:13','2013-08-27 10:14:13'),(6,'purchase_items','PurchaseItemsController.php','2013-08-27 10:14:25','2013-08-27 10:14:25'),(7,'option_groups','OptionGroupsController.php','2013-08-27 16:34:00','2013-08-27 16:34:00'),(8,'options','OptionsController.php','2013-08-27 16:34:06','2013-08-27 16:34:06'),(9,'consume_items','ConsumeItemsController.php','2013-08-30 11:33:43','2013-08-30 11:33:43');
+INSERT INTO `controller_files` VALUES (1,'controller_files','ControllerFilesController.php','2013-08-24 23:05:29','2013-08-24 23:05:29'),(2,'groups','GroupsController.php','2013-08-24 23:06:10','2013-08-24 23:06:10'),(3,'model_files','ModelFilesController.php','2013-08-24 23:06:29','2013-08-24 23:06:29'),(4,'users','UsersController.php','2013-08-24 23:06:47','2013-08-24 23:06:47'),(5,'purchase_orders','PurchaseOrdersController.php','2013-08-27 10:14:13','2013-08-27 10:14:13'),(6,'purchase_items','PurchaseItemsController.php','2013-08-27 10:14:25','2013-08-27 10:14:25'),(7,'option_groups','OptionGroupsController.php','2013-08-27 16:34:00','2013-08-27 16:34:00'),(8,'options','OptionsController.php','2013-08-27 16:34:06','2013-08-27 16:34:06'),(9,'consume_items','ConsumeItemsController.php','2013-08-30 11:33:43','2013-08-30 11:33:43'),(10,'sales_orders','SalesOrdersController.php','2013-09-19 14:21:58','2013-09-19 14:21:58'),(11,'sales_items','SalesItemsController.php','2013-09-19 14:22:14','2013-09-19 14:22:14'),(12,'sales_parts','SalesPartsController.php','2013-09-19 14:22:28','2013-09-19 14:22:28'),(13,'processes','ProcessesController.php','2013-09-19 14:22:58','2013-09-19 14:22:58');
 /*!40000 ALTER TABLE `controller_files` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -115,7 +115,7 @@ CREATE TABLE `model_files` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -142,7 +142,7 @@ CREATE TABLE `option_groups` (
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name_UNIQUE` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -151,7 +151,7 @@ CREATE TABLE `option_groups` (
 
 LOCK TABLES `option_groups` WRITE;
 /*!40000 ALTER TABLE `option_groups` DISABLE KEYS */;
-INSERT INTO `option_groups` VALUES (1,'dddddddddd','2013-08-27 16:36:04','2013-08-27 16:36:04'),(2,'ogggg_b','2013-08-27 16:36:23','2013-08-27 16:36:23'),(3,'ogggg_catssssssss','2013-08-27 16:36:28','2013-08-27 16:44:24'),(5,'og_kkkkksssssss','2013-08-27 16:51:42','2013-08-27 16:51:42'),(6,'og_sh','2013-08-27 17:01:31','2013-08-27 22:51:07'),(7,'og_shelves','2013-08-27 17:08:14','2013-08-27 23:09:14'),(8,'货架区域testttttttttt','2013-08-27 19:35:33','2013-08-27 19:35:43'),(9,'og_dddd','2013-08-27 22:47:15','2013-08-27 23:09:02');
+INSERT INTO `option_groups` VALUES (1,'dddddddddd','2013-08-27 16:36:04','2013-08-27 16:36:04'),(2,'ogggg_b','2013-08-27 16:36:23','2013-08-27 16:36:23'),(3,'ogggg_catssssssss','2013-08-27 16:36:28','2013-08-27 16:44:24'),(5,'og_kkkkksssssss','2013-08-27 16:51:42','2013-08-27 16:51:42'),(6,'og_sh','2013-08-27 17:01:31','2013-08-27 22:51:07'),(7,'og_shelves','2013-08-27 17:08:14','2013-08-27 23:09:14'),(8,'货架区域testttttttttt','2013-08-27 19:35:33','2013-08-27 19:35:43'),(9,'og_dddd','2013-08-27 22:47:15','2013-08-27 23:09:02'),(10,'og_process_names','2013-09-19 14:16:35','2013-09-19 14:17:57'),(11,'og_statuses','2013-09-19 14:17:18','2013-09-19 14:18:05');
 /*!40000 ALTER TABLE `option_groups` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -170,7 +170,7 @@ CREATE TABLE `options` (
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -179,8 +179,36 @@ CREATE TABLE `options` (
 
 LOCK TABLES `options` WRITE;
 /*!40000 ALTER TABLE `options` DISABLE KEYS */;
-INSERT INTO `options` VALUES (1,3,'fdsfds',3,'2013-08-27 17:01:51','2013-08-28 13:08:46'),(2,1,'A1111111',7,'2013-08-27 17:08:52','2013-08-27 17:08:59'),(4,3,'B11111111',7,'2013-08-27 17:09:35','2013-08-27 17:09:58'),(5,3,'fddsfdfgdC111111111',9,'2013-08-27 17:09:46','2013-08-28 13:09:14'),(6,22,'xxxxxxxxx',1,'2013-08-30 09:48:05','2013-08-30 09:48:37');
+INSERT INTO `options` VALUES (1,3,'fdsfds',3,'2013-08-27 17:01:51','2013-08-28 13:08:46'),(2,1,'A1111111',7,'2013-08-27 17:08:52','2013-08-27 17:08:59'),(4,3,'B11111111',7,'2013-08-27 17:09:35','2013-08-27 17:09:58'),(5,3,'fddsfdfgdC111111111',9,'2013-08-27 17:09:46','2013-08-28 13:09:14'),(6,22,'xxxxxxxxx',1,'2013-08-30 09:48:05','2013-08-30 09:48:37'),(7,1,'chegonggggggggggggg',10,'2013-09-19 14:16:55','2013-09-19 14:18:14'),(8,2,'xigong',10,'2013-09-19 14:17:02','2013-09-19 14:17:02'),(9,1,'todo',11,'2013-09-19 14:17:36','2013-09-19 14:17:36'),(10,2,'doing',11,'2013-09-19 14:17:42','2013-09-19 14:17:42'),(11,3,'doneeeeeeee',11,'2013-09-19 14:17:49','2013-09-19 14:17:49');
 /*!40000 ALTER TABLE `options` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `processes`
+--
+
+DROP TABLE IF EXISTS `processes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `processes` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `process_name_id` int(10) unsigned NOT NULL,
+  `operator_id` int(10) unsigned NOT NULL,
+  `sales_part_id` int(10) unsigned NOT NULL,
+  `status_id` int(10) unsigned NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `processes`
+--
+
+LOCK TABLES `processes` WRITE;
+/*!40000 ALTER TABLE `processes` DISABLE KEYS */;
+/*!40000 ALTER TABLE `processes` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -241,6 +269,89 @@ INSERT INTO `purchase_orders` VALUES (1,'A公司','2013-08-27 10:16:51','2013-08
 UNLOCK TABLES;
 
 --
+-- Table structure for table `sales_items`
+--
+
+DROP TABLE IF EXISTS `sales_items`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sales_items` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `unit_price` decimal(10,2) NOT NULL,
+  `quantity` int(10) unsigned NOT NULL,
+  `unit` varchar(127) NOT NULL,
+  `sales_order_id` int(10) unsigned NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sales_items`
+--
+
+LOCK TABLES `sales_items` WRITE;
+/*!40000 ALTER TABLE `sales_items` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sales_items` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sales_orders`
+--
+
+DROP TABLE IF EXISTS `sales_orders`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sales_orders` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `po` varchar(255) NOT NULL,
+  `salesman_id` int(10) unsigned NOT NULL,
+  `inputer_id` int(10) unsigned NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sales_orders`
+--
+
+LOCK TABLES `sales_orders` WRITE;
+/*!40000 ALTER TABLE `sales_orders` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sales_orders` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sales_parts`
+--
+
+DROP TABLE IF EXISTS `sales_parts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sales_parts` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `quantity` int(10) unsigned NOT NULL,
+  `sales_item_id` int(10) unsigned NOT NULL,
+  `created` datetime DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sales_parts`
+--
+
+LOCK TABLES `sales_parts` WRITE;
+/*!40000 ALTER TABLE `sales_parts` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sales_parts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `users`
 --
 
@@ -278,4 +389,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-08-30 12:09:06
+-- Dump completed on 2013-09-19 14:25:59
